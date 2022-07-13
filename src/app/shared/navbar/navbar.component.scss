@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 20px 50px;
+  
+  .navbar__item {
+    padding: 1.2rem;
+    cursor: pointer;
+    &.fixed {
+      background: orange;
+      border: 1px solid orange;
+    }
+  }
+
+  .navbar__list {
+    display: flex;
+    width: fit-content;
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
+    border: 1px solid black;
+
+    .navbar__item {
+      list-style: none;
+    }
+  }
+
+}
