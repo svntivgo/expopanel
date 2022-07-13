@@ -1,0 +1,27 @@
+<nav id="navbar" class="navbar" [ngClass]="{ contraido: esMenuContraido }">
+  <ul id="navbar__list" class="navbar__list">
+    <div class="navbar__button">
+      <div
+        id="navbar__button-bar-arriba"
+        class="navbar__button-bar arriba"
+      ></div>
+      <div id="navbar__button-bar-medio" class="navbar__button-bar medio"></div>
+      <div id="navbar__button-bar-abajo" class="navbar__button-bar abajo"></div>
+    </div>
+    <li id="navbar__item-home" class="navbar__item home">Home</li>
+    <li id="navbar__item-model" class="navbar__item model">Model</li>
+    <li id="navbar__item-drivers" class="navbar__item drivers">Drivers</li>
+    <li id="navbar__item-mantra" class="navbar__item mantra">Mantra</li>
+    <li id="navbar__item-accolades" class="navbar__item accolades">
+      Accolades
+    </li>
+    <li id="navbar__item-places" class="navbar__item places">Places</li>
+  </ul>
+  <div
+    id="navbar__item-contact"
+    class="navbar__item fixed contact"
+    (click)="transformarMenu()"
+  >
+    Contact
+  </div>
+</nav>
