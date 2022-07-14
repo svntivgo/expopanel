@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  height: 120px;
+  background-color: black;
+  justify-content: space-around;
+  align-items: center;
+  
+  .footer__logo {
+    width: fit-content;
+    height: fit-content;
+    font-size: 50px;
+    color: aliceblue;
+  }
+
+  .footer__copyright {
+    font-size: 16px;
+    color: aliceblue;
+  }
+
+  .footer__contenedor-redes {
+    display: flex;
+
+    .footer__icono-redes {
+      width: fit-content;
+      height: fit-content;
+      margin: 7px;
+      font-size: 20px;
+      color: aliceblue;
+    }
+  }
+}
