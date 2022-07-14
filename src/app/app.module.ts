@@ -11,6 +11,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SeccionUnoComponent } from './components/seccion-uno/seccion-uno.component';
 import { SeccionDosComponent } from './components/seccion-dos/seccion-dos.component';
 import { SeccionTresComponent } from './components/seccion-tres/seccion-tres.component';
+import { SeccionCuatroComponent } from './components/seccion-cuatro/seccion-cuatro.component';
 
 import { HomeComponent } from './home/home.component';
 import { DriversComponent } from './drivers/drivers.component';
@@ -23,6 +24,7 @@ import { AngularFullpageModule } from '@fullpage/angular-fullpage';
     SeccionUnoComponent,
     SeccionDosComponent,
     SeccionTresComponent,
+    SeccionCuatroComponent,
     HomeComponent,
     DriversComponent
   ],
