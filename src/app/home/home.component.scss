@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-image: linear-gradient(135deg,#09f511,#ff003c,#d9ff00);
+    background-size: 500%;
+    animation-name: fanimado;
+    animation-duration: 10s;
+}
+
+.texto{
+    color: white;
+    text-align: center;
+    margin: 300px 0;
+    font-size: 28px;
+}
+
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+
+}
