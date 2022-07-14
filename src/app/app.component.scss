@@ -3,3 +3,60 @@
 div#section-navbar.section.navbar {
   height: 120px;
 }
+
+.flecha{
+  width: 40px;
+  height: 40px;
+  margin-top: 300px;
+}
+div#gradient-0{
+  background-size: 500%;
+  background-color: white;
+}
+div#gradient-1{
+  background-image: linear-gradient(135deg,#09f511,#ff003c,#d9ff00);
+    background-size: 500%;
+    animation-name: fanimado;
+    animation-duration: 6s;
+}
+div#gradient-2{
+  background-image: linear-gradient(135deg,#df0606,#3f06b1,#058a98);
+    background-size: 500%;
+    animation-name: fanimado;
+    animation-duration: 6s;
+}
+
+div#gradient-3{
+  background-image: linear-gradient(135deg,#09f511,#ff003c,#d9ff00);
+    background-size: 500%;
+    animation-name: fanimado;
+    animation-duration: 6s;
+}
+div#gradient-4{
+  background-image: linear-gradient(135deg,#4409f5,#ff0000,#ff00a6);
+    background-size: 500%;
+    animation-name: fanimado;
+    animation-duration: 6s;
+}
+div#gradient-5{
+  background-image: linear-gradient(135deg,#09f511,#ff003c,#d9ff00);
+    background-size: 500%;
+    animation-name: fanimado;
+    animation-duration: 6s;
+}
+div#gradient-6{
+  background-image: linear-gradient(135deg,#4409f5,#ff0000,#ff00a6);
+    background-size: 500%;
+    animation-name: fanimado;
+    animation-duration: 6s;
+}
+
+@keyframes fanimado{
+  0%{
+      background-position: 0% 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+
+}

@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   config: any;
   fullpage_api: any;
+  actual = "";
   constructor() {
 
     // for more details on config options please visit fullPage.js docs
@@ -24,6 +25,7 @@ export class AppComponent {
       },
       afterLoad: (origin, destination, direction) => {
         console.log(origin.index);
+        this.actual = "gradient-"+destination.index;
       }
     };
   }

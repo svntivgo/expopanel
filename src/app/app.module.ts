@@ -13,9 +13,10 @@ import { SeccionDosComponent } from './components/seccion-dos/seccion-dos.compon
 import { SeccionTresComponent } from './components/seccion-tres/seccion-tres.component';
 import { SeccionCuatroComponent } from './components/seccion-cuatro/seccion-cuatro.component';
 
-import { HomeComponent } from './home/home.component';
-import { DriversComponent } from './drivers/drivers.component';
+import { HomeComponent } from './components/home/home.component';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,13 +27,16 @@ import { AngularFullpageModule } from '@fullpage/angular-fullpage';
     SeccionTresComponent,
     SeccionCuatroComponent,
     HomeComponent,
-    DriversComponent
+    FormularioComponent
+  
   ],
   imports: [
     BrowserModule,
     MatIconModule,
     FontAwesomeModule,
-    AngularFullpageModule
+    AngularFullpageModule,
+    MatFormFieldModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
