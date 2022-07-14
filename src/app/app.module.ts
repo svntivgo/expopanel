@@ -7,17 +7,23 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { MatIconModule } from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HomeComponent } from './home/home.component';
+import { DriversComponent } from './drivers/drivers.component';
+import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    DriversComponent
   ],
   imports: [
     BrowserModule,
     MatIconModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AngularFullpageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
