@@ -7,12 +7,14 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { MatIconModule } from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SeccionUnoComponent } from './components/seccion-uno/seccion-uno.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    SeccionUnoComponent
   ],
   imports: [
     BrowserModule,
