@@ -1,71 +1,60 @@
 .seccion {
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: baseline;
   .seccion__contenedor {
-    width: 40vw;
+    width: 50vw;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
     &.izq {
-      display: flex;
-      flex-direction: column;
+      background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../../../assets/img/ciudad_uno.jpg);
 
-      .seccion__paginado {
-        width: 100%;
-        display: flex;
-        align-items: baseline;
-        
-        .seccion__pagina {
-          margin-right: 7px;
-        }
-
-        .seccion__paginado-borde {
-          width: 40vw;
-          border-bottom: 1px solid black;
-        }
+      &:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../../../assets/img/ciudad_uno.jpg);
       }
-      
-      .seccion__titulo {
-        width: 100%;
-        font-size: 50px;
-        text-align: right;
-      }
-
-      .seccion__resumen {
-        font-size: 14px;
-        text-align: right;
-      }
-
     }
 
-    .seccion__contenedor-caracteristicas {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    &.der {
+      background:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../../../assets/img/ciudad_dos.jpg);
+      
+      &:hover {
+      background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../../../assets/img/ciudad_dos.jpg);
 
-      .seccion__caracteristica {
+      }    
+    }
+
+
+    .seccion__titulo {
+      font-size: 70px;
+      color: aliceblue;
+    }
+
+    .seccion__contenedor-datos {
+
+      .seccion__datos-direccion {
+        font-size: 18px;
+        color: aliceblue;
+      }
+
+      .seccion__datos-telefono {
+        font-size: 18px;
+        color: orange;
+      }
+
+      .seccion__datos-mapa {
         display: flex;
         align-items: center;
-        margin-top: 30px;
-
-        .seccion__icono {
-          width: 30px;
-          height: 30px;
-          font-size: 30px;
-          margin-right: 10px;
-        }
-
-        .seccion__texto-caracteristica {
-          font-size: 12px;
-          line-height: 30px;
-        }
+        font-size: 12px;
+        text-decoration: none;
+        color: orange;
       }
     }
+    
   }
 }
