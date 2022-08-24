@@ -1,29 +1,29 @@
-<div>
+<!-- <div>
   <app-navbar></app-navbar>
-</div>
+</div> -->
 
-<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
-    
-    <div id="{{actual}}" class="section">
-      <app-home></app-home>
-    </div>
-    <div id="{{actual}}" class="section">
-      <app-seccion-uno></app-seccion-uno>
-    </div>
-    <div id="{{actual}}" class="section">
-      <app-seccion-dos></app-seccion-dos>
-    </div>
-    <div id="{{actual}}" class="section">
-      <app-seccion-tres></app-seccion-tres>
-    </div>
-    <div id="{{actual}}" class="section">
-      <app-seccion-cuatro></app-seccion-cuatro>
-    </div>
-    <div id="{{actual}}" class="section">
-      <app-formulario></app-formulario>
+<!-- <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+  <div id="{{ actual }}" class="section">
+    <app-home></app-home>
   </div>
-    <div id="{{actual}}" class="section">
-      <app-footer></app-footer>
-    </div>
+  <div id="{{ actual }}" class="section">
+    <app-seccion-uno></app-seccion-uno>
   </div>
+  <div id="{{ actual }}" class="section">
+    <app-seccion-dos></app-seccion-dos>
+  </div>
+  <div id="{{ actual }}" class="section">
+    <app-seccion-tres></app-seccion-tres>
+  </div>
+  <div id="{{ actual }}" class="section">
+    <app-seccion-cuatro></app-seccion-cuatro>
+  </div>
+  <div id="{{ actual }}" class="section">
+    <app-formulario></app-formulario>
+  </div>
+  <div id="{{ actual }}" class="section">
+    <app-footer></app-footer>
+  </div>
+</div> -->
 
+<router-outlet></router-outlet>
