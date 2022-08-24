@@ -1,0 +1,75 @@
+.maintenance {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../../assets/img/maintenance/background.png);
+  background-size: cover;
+
+  .maintenance__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    height: 40vw;
+
+    &.info {
+      background-image: url(../../../assets/img/maintenance/bandas_cruzadas.png);
+      background-size: contain;
+
+      .maintenance__info {
+        width: 40vw;
+        height: 40vw;
+        background-image: url(../../../assets/img/maintenance/headline.png);
+        background-size: contain;
+      }
+    }
+
+    &.about {
+      .maintenance__about-logo {
+        width: 270px;
+        height: auto;
+        margin-top: -20px;
+        margin-bottom: -70px;
+      }
+      .maintenance__about-text {
+        width: 90%;
+        color: aliceblue;
+        text-shadow: 3px 3px 3px  #222;
+      }
+
+      .maintenance__card-container {
+        display: flex;
+        width: 90%;
+
+        &.upper {
+          justify-content: end;
+        }
+
+        &.lower {
+          justify-content: start;
+        }
+        .maintenance__info-card {
+          width: 200px;
+          height: 200px;
+          margin: -65px -20px;
+          background-size: contain;
+
+          &.white {
+            background-image: url(../../../assets/img/maintenance/montaje_eventos.png);
+          }
+          &.purple {
+            background-image: url(../../../assets/img/maintenance/creative_experience.png);
+          }
+          &.yellow {
+            background-image: url(../../../assets/img/maintenance/marketing_experiencial.png);
+          }
+          &.black {
+            background-image: url(../../../assets/img/maintenance/data_xp.png);
+          }
+        }
+      }
+    }
+  }
+}
