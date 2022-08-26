@@ -47,7 +47,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumError": "10kb"
                 }
               ],
               "fileReplacements": [
@@ -104,6 +104,14 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/proyecto-uno",
+            "netlifyToken": "qNyj4TDJOJqsJq_c86Ga_Gf2JTPPnJqfEIXplACCdYY",
+            "siteId": "878c1a14-7706-4abc-aed7-ce05f43d7173"
           }
         }
       }
