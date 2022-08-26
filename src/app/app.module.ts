@@ -17,6 +17,10 @@ import { HomeComponent } from './components/home/home.component';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { RouterModule, Routes } from '@angular/router';
+import { MaintenanceComponent } from './components/maintenance/maintenance.component';
+
+const routes: Routes = [{ path: '**', component: MaintenanceComponent },];
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,17 +31,20 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     SeccionTresComponent,
     SeccionCuatroComponent,
     HomeComponent,
-    FormularioComponent
-  
+    FormularioComponent,
+    MaintenanceComponent
+
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(routes),
     MatIconModule,
     FontAwesomeModule,
     AngularFullpageModule,
     MatFormFieldModule
-    
+
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
