@@ -1,0 +1,31 @@
+.data {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .data__contenedor {
+    width: 45vw;
+    height: 45vw;
+    background-color: #ddd;
+    &.izq {
+      padding-inline: 30px;
+    }
+    &.der {
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .data {
+    flex-direction: column-reverse;
+    justify-content: center;
+    .data__contenedor {
+      &.izq {
+      }
+      &.der {
+        min-width: 100vw;
+      }
+    }
+  }
+}
