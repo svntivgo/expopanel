@@ -1,0 +1,40 @@
+.contacto {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  .contacto__info {
+    width: 70vw;
+    background-color: #ddd;
+    padding-inline: 50px;
+  }
+  .contacto__formulario {
+    width: 50vw;
+    padding-inline: 20px;
+    background-color: #ddd;
+    text-align: center;
+    form {
+      input {
+        display: block;
+        height: 30px;
+        background-color: hotpink;
+        border: none;
+        margin: auto;
+      }
+      button {
+        display: block;
+        width: 80px;
+        height: 30px;
+        margin: auto;
+        color: aliceblue;
+        background-color: transparent;
+        border-color: aliceblue;
+        border: none;
+        border-left: 3px solid;
+        border-right: 3px solid;
+      }
+    }
+  }
+}
