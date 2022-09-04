@@ -16,7 +16,7 @@ export class AppComponent {
 
       // fullpage options
       licenseKey: 'YOUR LICENSE KEY HERE',
-      anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+      anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'lastPage'],
       menu: '#menu',
 
       // fullpage callbacks

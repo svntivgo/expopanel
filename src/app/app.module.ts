@@ -23,6 +23,8 @@ import { MontajesComponent } from './components/montajes/montajes.component';
 import { CreatividadComponent } from './components/creatividad/creatividad.component';
 import { MarketingComponent } from './components/marketing/marketing.component';
 import { DataComponent } from './components/data/data.component';
+import { AliadosComponent } from './components/aliados/aliados.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 const routes: Routes = [{ path: 'mantenimiento', component: MaintenanceComponent },];
 @NgModule({
@@ -40,7 +42,9 @@ const routes: Routes = [{ path: 'mantenimiento', component: MaintenanceComponent
     MontajesComponent,
     CreatividadComponent,
     MarketingComponent,
-    DataComponent
+    DataComponent,
+    AliadosComponent,
+    ContactoComponent
 
   ],
   imports: [
