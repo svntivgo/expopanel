@@ -1,32 +1,27 @@
-.home {
+.creatividad {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  .home__contenedor {
+  .creatividad__contenedor {
     width: 45vw;
     height: 45vw;
     background-color: #ddd;
-
     &.izq {
-      padding-inline: 40px;
+      padding-inline: 30px;
     }
-
     &.der {
     }
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .home {
+  .creatividad {
     flex-direction: column-reverse;
     justify-content: center;
-    .home__contenedor {
+    .creatividad__contenedor {
       &.izq {
-        width: 50vw;
-        height: 50vw;
       }
       &.der {
         min-width: 100vw;

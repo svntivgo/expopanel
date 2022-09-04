@@ -19,8 +19,15 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { RouterModule, Routes } from '@angular/router';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
+import { MontajesComponent } from './components/montajes/montajes.component';
+import { CreatividadComponent } from './components/creatividad/creatividad.component';
+import { MarketingComponent } from './components/marketing/marketing.component';
+import { DataComponent } from './components/data/data.component';
+import { AliadosComponent } from './components/aliados/aliados.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { GaleriaComponent } from './components/galeria/galeria.component';
 
-const routes: Routes = [{ path: '**', component: MaintenanceComponent },];
+const routes: Routes = [{ path: 'mantenimiento', component: MaintenanceComponent },];
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +39,14 @@ const routes: Routes = [{ path: '**', component: MaintenanceComponent },];
     SeccionCuatroComponent,
     HomeComponent,
     FormularioComponent,
-    MaintenanceComponent
+    MaintenanceComponent,
+    MontajesComponent,
+    CreatividadComponent,
+    MarketingComponent,
+    DataComponent,
+    AliadosComponent,
+    ContactoComponent,
+    GaleriaComponent
 
   ],
   imports: [

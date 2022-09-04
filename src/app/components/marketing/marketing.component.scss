@@ -1,35 +1,30 @@
-.home {
+.marketing {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  .home__contenedor {
+  .marketing__contenedor {
     width: 45vw;
     height: 45vw;
     background-color: #ddd;
-
     &.izq {
-      padding-inline: 40px;
     }
-
     &.der {
+      padding-inline: 30px;
     }
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .home {
-    flex-direction: column-reverse;
+  .marketing {
+    flex-direction: column;
     justify-content: center;
-    .home__contenedor {
+    .marketing__contenedor {
       &.izq {
-        width: 50vw;
-        height: 50vw;
+        min-width: 100vw;
       }
       &.der {
-        min-width: 100vw;
       }
     }
   }
