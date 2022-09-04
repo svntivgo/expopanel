@@ -1,79 +1,19 @@
 .home {
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: baseline;
+  justify-content: space-between;
+  align-items: center;
+
   .home__contenedor {
-    width: 40vw;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 40%;
 
     &.izq {
-      display: flex;
-      flex-direction: column;
-      margin-top: 40px;
-
-      .seccion__paginado {
-        width: 100%;
-        display: flex;
-        align-items: baseline;
-
-        .seccion__pagina {
-          margin-right: 7px;
-        }
-
-        .seccion__paginado-borde {
-          width: 40vw;
-          border-bottom: 1px solid black;
-        }
-      }
-
-      .home__titulo {
-        margin-top: 100px;
-        width: 100%;
-        font-size: 60px !important;
-        text-align: left;
-      }
+      padding: 40px;
     }
 
-    .home__contenedor-caracteristicas {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      .home__caracteristica {
-        display: flex;
-        align-items: center;
-        margin-top: 30px;
-
-        .seccion__icono {
-          width: 30px;
-          height: 30px;
-          font-size: 30px;
-          margin-right: 10px;
-        }
-
-        .seccion__texto-caracteristica {
-          font-size: 12px;
-          line-height: 30px;
-        }
-      }
+    &.der {
     }
   }
-}
-.home__logo-img{
-    margin-top: 400px;
-    margin-left: 400px;
-    vertical-align: middle;
-    width: 100px;
-    height: 100px;
-}
-.home__flecha {
 
-    width: 50px;
-    height: 50px;
 }

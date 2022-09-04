@@ -20,7 +20,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { RouterModule, Routes } from '@angular/router';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
 
-const routes: Routes = [{ path: '**', component: MaintenanceComponent },];
+const routes: Routes = [{ path: 'mantenimiento', component: MaintenanceComponent },];
 @NgModule({
   declarations: [
     AppComponent,
