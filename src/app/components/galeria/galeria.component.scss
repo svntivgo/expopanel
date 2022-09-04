@@ -1,0 +1,17 @@
+.galeria {
+  text-align: center;
+  .galeria__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    margin: auto;
+    padding: 4px 4px;
+    background-color: #ddd;
+    .galeria__miniatura {
+      width: 100px;
+      height: 100px;
+      margin: 1px 1px;
+      background-color: black;
+    }
+  }
+}

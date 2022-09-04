@@ -25,6 +25,7 @@ import { MarketingComponent } from './components/marketing/marketing.component';
 import { DataComponent } from './components/data/data.component';
 import { AliadosComponent } from './components/aliados/aliados.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { GaleriaComponent } from './components/galeria/galeria.component';
 
 const routes: Routes = [{ path: 'mantenimiento', component: MaintenanceComponent },];
 @NgModule({
@@ -44,7 +45,8 @@ const routes: Routes = [{ path: 'mantenimiento', component: MaintenanceComponent
     MarketingComponent,
     DataComponent,
     AliadosComponent,
-    ContactoComponent
+    ContactoComponent,
+    GaleriaComponent
 
   ],
   imports: [
