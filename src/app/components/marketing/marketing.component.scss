@@ -1,0 +1,31 @@
+.marketing {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .marketing__contenedor {
+    width: 45vw;
+    height: 45vw;
+    background-color: #ddd;
+    &.izq {
+    }
+    &.der {
+      padding-inline: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .marketing {
+    flex-direction: column;
+    justify-content: center;
+    .marketing__contenedor {
+      &.izq {
+        min-width: 100vw;
+      }
+      &.der {
+      }
+    }
+  }
+}

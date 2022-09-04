@@ -21,6 +21,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
 import { MontajesComponent } from './components/montajes/montajes.component';
 import { CreatividadComponent } from './components/creatividad/creatividad.component';
+import { MarketingComponent } from './components/marketing/marketing.component';
 
 const routes: Routes = [{ path: 'mantenimiento', component: MaintenanceComponent },];
 @NgModule({
@@ -36,7 +37,8 @@ const routes: Routes = [{ path: 'mantenimiento', component: MaintenanceComponent
     FormularioComponent,
     MaintenanceComponent,
     MontajesComponent,
-    CreatividadComponent
+    CreatividadComponent,
+    MarketingComponent
 
   ],
   imports: [
