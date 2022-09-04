@@ -19,6 +19,7 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { RouterModule, Routes } from '@angular/router';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
+import { MontajesComponent } from './components/montajes/montajes.component';
 
 const routes: Routes = [{ path: 'mantenimiento', component: MaintenanceComponent },];
 @NgModule({
@@ -32,7 +33,8 @@ const routes: Routes = [{ path: 'mantenimiento', component: MaintenanceComponent
     SeccionCuatroComponent,
     HomeComponent,
     FormularioComponent,
-    MaintenanceComponent
+    MaintenanceComponent,
+    MontajesComponent
 
   ],
   imports: [
