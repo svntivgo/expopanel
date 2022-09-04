@@ -2,18 +2,35 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
   .home__contenedor {
-    width: 40%;
+    width: 40vw;
 
     &.izq {
       padding: 40px;
+      background-color: #ddd;
     }
 
     &.der {
     }
   }
+}
 
+@media screen and (max-width: 1023px) {
+  .home {
+    flex-direction: column-reverse;
+    justify-content: center;
+    .home__contenedor {
+      &.izq {
+        width: 50vw;
+        height: 50vw;
+      }
+      &.der {
+        width: 100vw;
+      }
+    }
+  }
 }
