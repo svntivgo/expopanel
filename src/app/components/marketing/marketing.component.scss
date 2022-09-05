@@ -4,14 +4,36 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: url(../../../assets/img/background_marketing.jpg);
+  background-size: cover;
   .marketing__contenedor {
-    width: 45vw;
-    height: 45vw;
-    background-color: #ddd;
+    width: 50vw;
+    height: 30vw;
     &.izq {
+      display: flex;
+      align-items: center;
+      .marketing__titulo {
+        width: 40vw;
+        margin: auto;
+      }
     }
     &.der {
       padding-inline: 30px;
+      background: url(../../../assets/img/background_texto_inv_h_v.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      h3,p {
+        margin: 0 60px;
+      }
+
+      h3:first-child {
+        margin-top: 100px;
+        margin-bottom: 50px;
+      }
+
+      p {
+        margin-top: 5px;
+      }
     }
   }
 }
@@ -22,9 +44,27 @@
     justify-content: center;
     .marketing__contenedor {
       &.izq {
-        min-width: 100vw;
+        width: 100vw;
+        height: auto;
+        .marketing__titulo {
+          width: 80vw;
+        }
       }
       &.der {
+        width: 70vw;
+        height: 70vw;
+        margin-top: 30px;
+        h3,p {
+          margin: 0 20px;
+        }
+
+        h3:first-child {
+          margin-top: 30px;
+        }
+
+        p {
+          margin-top: 10px;
+        }
       }
     }
   }

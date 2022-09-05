@@ -2,3 +2,23 @@
 @import url(~fullpage.js/dist/fullpage.min.css);
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h3 {
+  color: white;
+  font-size: x-large;
+}
+
+p {
+  color: white;
+  font-size: small;
+}
+
+@media screen and (max-width: 1023px) {
+  h3 {
+    font-size: small;
+  }
+
+  p {
+    font-size: xx-small;
+  }
+}

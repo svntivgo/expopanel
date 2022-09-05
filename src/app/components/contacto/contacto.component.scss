@@ -1,25 +1,35 @@
 .contacto {
-  display: flex;
-  flex-direction: column;
   width: 100vw;
-  height: auto;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url(../../../assets/img/background_contacto.jpg);
+  background-size: cover;
   .contacto__info {
     width: 70vw;
-    background-color: #ddd;
-    padding-inline: 50px;
+    background: url(../../../assets/img/background_info.png);
+    padding-inline: 100px;
+  }
+  img {
+    width: 30vw;
+    margin: 30px 0;
   }
   .contacto__formulario {
     width: 50vw;
     padding-inline: 20px;
-    background-color: #ddd;
+    background: url(../../../assets/img/background_formulario.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     form {
       input {
         display: block;
+        width: 300px;
         height: 30px;
-        background-color: hotpink;
+        background-color: #ff009e;
         border: none;
         margin: auto;
       }
@@ -27,13 +37,38 @@
         display: block;
         width: 80px;
         height: 30px;
-        margin: auto;
+        margin: 10px auto;
         color: aliceblue;
         background-color: transparent;
         border-color: aliceblue;
         border: none;
         border-left: 3px solid;
         border-right: 3px solid;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .contacto {
+    .contacto__info {
+      width: 80vw;
+      background: url(../../../assets/img/background_info_movil.png);
+      background-size: cover;
+      padding-inline: 0;
+      h3,p {
+        margin: 20px 30px;
+      }
+    }
+    img {
+      width: 50vw;
+    }
+    .contacto__formulario {
+      width: 70vw;
+      form {
+        input {
+          width: 200px;
+        }
       }
     }
   }

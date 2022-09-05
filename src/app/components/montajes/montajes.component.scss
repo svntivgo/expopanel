@@ -4,14 +4,53 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: url(../../../assets/img/background_montajes.jpg);
+  background-size: cover;
   .montajes__contenedor {
-    width: 45vw;
-    height: 45vw;
-    background-color: #ddd;
+    width: 50vw;
+    height: 30vw;
     &.izq {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .montajes__titulo {
+        width: 40vw;
+        margin: auto;
+        margin-top: -70px;
+      }
+      .montajes__reloj {
+        &.perfil {
+          width: 200px;
+          margin-bottom: -80px;
+        }
+        &.frontal {
+          width: 300px;
+        }
+        &.acostado {
+          width: 150px;
+          margin: auto;
+          margin-right: 200px;
+          margin-top: 50px;
+        }
+      }
     }
     &.der {
       padding-inline: 30px;
+      background: url(../../../assets/img/background_texto_inv_h_v.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      h3,p {
+        margin: 0 60px;
+      }
+
+      h3:first-child {
+        margin-top: 100px;
+        margin-bottom: 50px;
+      }
+
+      p {
+        margin-top: 5px;
+      }
     }
   }
 }
@@ -22,9 +61,47 @@
     justify-content: center;
     .montajes__contenedor {
       &.izq {
-        min-width: 100vw;
+        width: 100vw;
+        height: auto;
+        .montajes__titulo {
+          width: 80vw;
+        }
+        .montajes__reloj {
+          &.perfil {
+            width: 150px;
+            margin-bottom: -350px;
+            position: relative;
+            right: -200px;
+          }
+          &.frontal {
+            width: 250px;
+            margin: auto;
+            margin-left: -290px;
+          }
+          &.acostado {
+            width: 80px;
+            margin: auto;
+            margin-right: 50px;
+            position: relative;
+            bottom: -370px;
+          }
+        }
       }
       &.der {
+        width: 70vw;
+        height: 70vw;
+        margin-top: 30px;
+        h3,p {
+          margin: 0 20px;
+        }
+
+        h3:first-child {
+          margin-top: 30px;
+        }
+
+        p {
+          margin-top: 10px;
+        }
       }
     }
   }
