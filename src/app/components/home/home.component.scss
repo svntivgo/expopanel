@@ -1,6 +1,6 @@
 .home {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   padding-top: 100px;
   justify-content: space-between;
@@ -9,11 +9,11 @@
   background-size: cover;
 
   .home__contenedor {
-    width: 45vw;
-    height: 45vw;
+    width: 40vw;
+    height: 40vw;
 
     &.izq {
-      background: url(../../../assets/img/background_texto_home.png);
+      background: url(../../../assets/img/background_texto.png);
       background-size: contain;
       background-repeat: no-repeat;
 
