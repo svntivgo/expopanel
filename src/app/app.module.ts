@@ -8,11 +8,6 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { SeccionUnoComponent } from './components/seccion-uno/seccion-uno.component';
-import { SeccionDosComponent } from './components/seccion-dos/seccion-dos.component';
-import { SeccionTresComponent } from './components/seccion-tres/seccion-tres.component';
-import { SeccionCuatroComponent } from './components/seccion-cuatro/seccion-cuatro.component';
-
 import { HomeComponent } from './components/home/home.component';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { FormularioComponent } from './components/formulario/formulario.component';
@@ -33,10 +28,6 @@ const routes: Routes = [{ path: 'mantenimiento', component: MaintenanceComponent
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    SeccionUnoComponent,
-    SeccionDosComponent,
-    SeccionTresComponent,
-    SeccionCuatroComponent,
     HomeComponent,
     FormularioComponent,
     MaintenanceComponent,
