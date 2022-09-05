@@ -11,15 +11,32 @@
     height: 30vw;
     &.izq {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       .montajes__titulo {
         width: 40vw;
         margin: auto;
+        margin-top: -70px;
+      }
+      .montajes__reloj {
+        &.perfil {
+          width: 200px;
+          margin-bottom: -80px;
+        }
+        &.frontal {
+          width: 300px;
+        }
+        &.acostado {
+          width: 150px;
+          margin: auto;
+          margin-right: 200px;
+          margin-top: 50px;
+        }
       }
     }
     &.der {
       padding-inline: 30px;
-      background: url(../../../assets/img/background_texto_inv.png);
+      background: url(../../../assets/img/background_texto_inv_h_v.png);
       background-size: cover;
       background-repeat: no-repeat;
       h3,p {
@@ -48,6 +65,26 @@
         height: auto;
         .montajes__titulo {
           width: 80vw;
+        }
+        .montajes__reloj {
+          &.perfil {
+            width: 150px;
+            margin-bottom: -350px;
+            position: relative;
+            right: -200px;
+          }
+          &.frontal {
+            width: 250px;
+            margin: auto;
+            margin-left: -290px;
+          }
+          &.acostado {
+            width: 80px;
+            margin: auto;
+            margin-right: 50px;
+            position: relative;
+            bottom: -370px;
+          }
         }
       }
       &.der {

@@ -4,13 +4,28 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
+  background: url(../../../assets/img/background_aliados.jpg);
+  background-size: cover;
   .aliados__contenedor {
+    background: url(../../../assets/img/background_texto_h.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 70%;
     height: 70%;
-    background-color: #ddd;
-
     h3 {
       text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .aliados {
+    background: url(../../../assets/img/background_aliados_movil.jpg);
+    background-size: cover;
+
+    .aliados__contenedor {
+      background: url(../../../assets/img/background_texto_v.png);
+      background-size: cover;
     }
   }
 }
