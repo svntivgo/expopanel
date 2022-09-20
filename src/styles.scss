@@ -19,21 +19,31 @@ body { margin: 0; font-family: BLMelody, Roboto, "Helvetica Neue", sans-serif; c
 h3 {
   color: #dadada;
   font-family: ClarityCity;
-  font-size: xx-large;
+  font-size: 28px;
 }
 
 p {
   color: #dadada;
   font-family: BLMelody;
-  font-size: large;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1281px) {
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
   h3 {
-    font-size: small;
+    font-size: 14px;
   }
 
   p {
-    font-size: xx-small;
+    font-size: 8px;
   }
 }
