@@ -105,17 +105,19 @@
     }
 
     .navbar__list {
-      width: 60vw;
+      width: 90vw;
       height: 100vh;
       flex-direction: column;
       border: none;
       padding-top: 100px;
       margin-right: 0;
-      background: white;
+      background: rgba(77, 0, 51, 80%);
+      backdrop-filter: blur( 3px);
+      border-left: 1px solid white;
       margin-block-start: 0;
       position: fixed;
       top: 0;
-      right: -80vw;
+      right: -120vw;
       z-index: 9;
       transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 
@@ -126,7 +128,7 @@
       .navbar__item {
         margin-top: 20px;
         a {
-          color: purple;
+          color: white;
           font-size: large;
           font-weight: 800;
         }
