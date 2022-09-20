@@ -1,21 +1,27 @@
 <footer id="footer" class="footer">
   <mat-icon id="footer__logo" class="footer__logo">logo_dev</mat-icon>
-  <p id="footer__copyright" class="footer__copyright">Todos los derechos reservados.</p>
+  <p id="footer__copyright" class="footer__copyright">
+    Todos los derechos reservados.
+  </p>
   <div id="footer__contenedor-redes" class="footer__contenedor-redes">
-    <fa-icon
-      id="footer__facebook"
-      class="footer__icono-redes facebook"
-      [icon]="iconos.faFacebook"
-    ></fa-icon>
-    <fa-icon
+    <a href="https://www.facebook.com/expopanelcolombia" target="_blank">
+      <fa-icon
+        id="footer__facebook"
+        class="footer__icono-redes facebook"
+        [icon]="iconos.faFacebook"
+      ></fa-icon
+    ></a>
+    <!-- <fa-icon
       id="footer__twitter"
       class="footer__icono-redes twitter"
       [icon]="iconos.faTwitter"
-    ></fa-icon>
-    <fa-icon
-      id="footer__instagram"
-      class="footer__icono-redes instagram"
-      [icon]="iconos.faInstagram"
-    ></fa-icon>
+    ></fa-icon> -->
+    <a href="https://www.instagram.com/expopanelcolombia" target="_blank"
+      ><fa-icon
+        id="footer__instagram"
+        class="footer__icono-redes instagram"
+        [icon]="iconos.faInstagram"
+      ></fa-icon
+    ></a>
   </div>
 </footer>
