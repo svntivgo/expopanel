@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { GalleriaModule } from 'primeng/galleria';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -46,7 +48,8 @@ const routes: Routes = [{ path: 'mantenimiento', component: MaintenanceComponent
     MatIconModule,
     FontAwesomeModule,
     AngularFullpageModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    GalleriaModule,
 
   ],
   exports: [RouterModule],
