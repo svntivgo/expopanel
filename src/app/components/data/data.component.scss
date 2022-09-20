@@ -28,6 +28,20 @@
       p {
         margin-top: 5px;
       }
+      .data__cam-techo {
+        width: 80px;
+        position: absolute;
+        left: 200px;
+        top: 70px;
+        transform: rotate(-130deg) scaleX(-1);
+      }
+      .data__cam-piso {
+        width: 150px;
+        transform: rotate(-45deg);
+        position: absolute;
+        margin-left: 25vw;
+        bottom: 50px;
+      }
     }
     &.der {
       display: flex;
@@ -38,6 +52,13 @@
       .data__titulo {
         width: 40vw;
         margin: auto;
+      }
+      .data__cam-titulo {
+        width: 150px;
+        position: absolute;
+        right: 220px;
+        top: 75px;
+        transform: scaleX(-1);
       }
     }
   }
@@ -64,14 +85,27 @@
         p {
           margin-top: 10px;
         }
+        .data__cam-techo {
+          width: 50px;
+          left: 5px;
+          top: 250px;
+        }
+        .data__cam-piso {
+          width: 100px;
+        }
       }
       &.der {
         width: 100vw;
         height: auto;
-        top: 100px;
+        top: 130px;
         margin-right: unset;
         .data__titulo {
           width: 80vw;
+        }
+        .data__cam-titulo {
+          width: 100px;
+          right: 100px;
+          top: -30px;
         }
       }
     }

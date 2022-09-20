@@ -1,10 +1,13 @@
 <section class="galeria">
-  <h3>Tal vez quieras seguirnos</h3>
-  <div class="galeria__contenedor">
-    <div class="galeria__miniatura"></div>
-    <div class="galeria__miniatura"></div>
-    <div class="galeria__miniatura"></div>
-    <div class="galeria__miniatura"></div>
-    <div class="galeria__miniatura"></div>
-  </div>
+  <img class="titulo-cursiva" src="../../../assets/img/tal-vez-quieras-seguirnos.png" alt="tal vez quieras seguirnos">
+  <p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'width': '90vw', 'max-width': '640px'}" [numVisible]="5">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" style="width: 90vw; max-width: 640px;" />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="width: 100px;" />
+        </div>
+    </ng-template>
+  </p-galleria>
 </section>

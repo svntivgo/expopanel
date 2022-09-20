@@ -5,20 +5,39 @@
       src="../../../assets/img/logotipo.png"
       alt="logotipo expopanel"
   /></a>
+  <fa-icon
+    id="navbar__icono"
+    class="navbar__icono"
+    [icon]="iconos.faBars"
+    (click)="desplegarMenu()"
+    [ngClass]="esMenuDesplegado"
+  ></fa-icon>
   <div class="navbar__button">
     <div id="navbar__button-bar-arriba" class="navbar__button-bar arriba"></div>
     <div id="navbar__button-bar-medio" class="navbar__button-bar medio"></div>
     <div id="navbar__button-bar-abajo" class="navbar__button-bar abajo"></div>
   </div>
-  <ul id="navbar__list" class="navbar__list">
-    <li id="navbar__item-home" class="navbar__item home">Home</li>
-    <li id="navbar__item-model" class="navbar__item model">Montajes</li>
-    <li id="navbar__item-drivers" class="navbar__item drivers">
-      Creatividad XP
+  <ul id="navbar__list" class="navbar__list" [ngClass]="esMenuDesplegado">
+    <li id="navbar__item-home" class="navbar__item home">
+      <a href="#home" (click)="desplegarMenu()">Home</a>
     </li>
-    <li id="navbar__item-mantra" class="navbar__item mantra">Marketing XP</li>
-    <li id="navbar__item-accolades" class="navbar__item accolades">Data XP</li>
-    <li id="navbar__item-places" class="navbar__item places">Aliados</li>
-    <li id="navbar__item-places" class="navbar__item places">Contacto</li>
+    <li id="navbar__item-model" class="navbar__item model">
+      <a href="#montajes" (click)="desplegarMenu()">Montajes</a>
+    </li>
+    <li id="navbar__item-drivers" class="navbar__item drivers">
+      <a href="#marketing" (click)="desplegarMenu()">Creatividad XP</a>
+    </li>
+    <li id="navbar__item-mantra" class="navbar__item mantra">
+      <a href="#marketing" (click)="desplegarMenu()">Marketing XP</a>
+    </li>
+    <li id="navbar__item-accolades" class="navbar__item accolades">
+      <a href="#data" (click)="desplegarMenu()">Data XP</a>
+    </li>
+    <li id="navbar__item-places" class="navbar__item places">
+      <a href="#aliados" (click)="desplegarMenu()">Aliados</a>
+    </li>
+    <li id="navbar__item-places" class="navbar__item places">
+      <a href="#contacto" (click)="desplegarMenu()">Contacto</a>
+    </li>
   </ul>
 </nav>

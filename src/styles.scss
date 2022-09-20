@@ -1,24 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
 @import url(~fullpage.js/dist/fullpage.min.css);
+
+@font-face {
+  font-family: ClarityCity;
+  font-weight: bold;
+  src: url("../src/assets/fonts/ClarityCity-Bold.otf") format('opentype');
+}
+
+@font-face {
+  font-family: BLMelody;
+  font-weight: normal;
+  src: url("../src/assets/fonts/BLMelody-Medium.otf") format('opentype');
+}
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: BLMelody, Roboto, "Helvetica Neue", sans-serif; color: #dadada }
 
 h3 {
-  color: white;
-  font-size: x-large;
+  color: #dadada;
+  font-family: ClarityCity;
+  font-size: 28px;
 }
 
 p {
-  color: white;
-  font-size: small;
+  color: #dadada;
+  font-family: BLMelody;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1281px) {
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
   h3 {
-    font-size: small;
+    font-size: 14px;
   }
 
   p {
-    font-size: xx-small;
+    font-size: 8px;
   }
 }

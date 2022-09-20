@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -6,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  esMenuContraido: boolean = false;
+  iconos = { faBars };
+  esMenuDesplegado: string = '';
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  transformarMenu() {
-    this.esMenuContraido = !this.esMenuContraido;
-    console.log(this.esMenuContraido);
+  desplegarMenu() {
+    this.esMenuDesplegado = this.esMenuDesplegado === '' ? 'desplegado' : '';
   }
 }
