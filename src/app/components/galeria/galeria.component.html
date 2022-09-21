@@ -2,7 +2,7 @@
   <img class="titulo-cursiva" src="../../../assets/img/tal-vez-quieras-seguirnos.png" alt="tal vez quieras seguirnos">
   <p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'width': '90vw', 'max-width': '640px'}" [numVisible]="5">
     <ng-template pTemplate="item" let-item>
-        <img [src]="item.previewImageSrc" style="width: 90vw; max-width: 640px;" />
+        <img [src]="item.previewImageSrc" style="width: 90vw; height: auto; max-width: 640px; max-height: 50vh;" />
     </ng-template>
     <ng-template pTemplate="thumbnail" let-item>
         <div class="grid grid-nogutter justify-content-center">
