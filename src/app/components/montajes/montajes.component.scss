@@ -39,7 +39,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       h3,p {
-        margin: 0 60px;
+        margin: 0 70px;
       }
 
       h3:first-child {
@@ -91,15 +91,35 @@
         height: 70vw;
         margin-top: 30px;
         h3,p {
-          margin: 0 20px;
+          margin: 0 50px;
         }
 
         h3:first-child {
-          margin-top: 40px;
+          margin-top: 90px;
         }
 
         p {
           margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .montajes {
+    .montajes__contenedor {
+      &.der {
+        h3,p {
+          margin: 0 20px;
+        }
+
+        h3:first-child {
+          margin-top: 50px;
+        }
+
+        p {
+          margin-top: 5px;
         }
       }
     }

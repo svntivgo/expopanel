@@ -72,14 +72,14 @@
       &.izq {
         width: 70vw;
         height: 70vw;
-        margin-top: 30px;
+        margin-top: 250px;
         h3,
         p {
-          margin: 0 20px;
+          margin: 0 50px;
         }
 
         h3 {
-          margin-top: 30px;
+          margin-top: 100px;
         }
 
         p {
@@ -104,8 +104,35 @@
         }
         .data__cam-titulo {
           width: 100px;
-          right: 100px;
-          top: -30px;
+          right: 30vw;
+          top: -0px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .data {
+    .data__contenedor {
+      &.izq {
+        margin-top: 150px;
+        h3,
+        p {
+          margin: 0 20px;
+        }
+
+        h3 {
+          margin-top: 50px;
+        }
+
+        p {
+          margin-top: 10px;
+        }
+      }
+      &.der {
+        .data__cam-titulo {
+          width: 70px;
         }
       }
     }

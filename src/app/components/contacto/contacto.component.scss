@@ -1,6 +1,8 @@
 .contacto {
   width: 100vw;
   height: 100vh;
+  height: calc(100vh - 120px);
+  margin-top: -120px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -59,9 +61,41 @@
       h3,p {
         margin: 20px 30px;
       }
+      h3 {
+        margin-top: 30px;
+      }
     }
     img {
       width: 50vw;
+    }
+    .contacto__formulario {
+      width: 70vw;
+      form {
+        input {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacto {
+    padding-top: 80px;
+    .contacto__info {
+      width: 85vw;
+      background: url(../../../assets/img/background_info_movil.png);
+      background-size: cover;
+      padding-inline: 0;
+      h3,p {
+        margin: 20px 25px;
+      }
+      h3 {
+        margin-top: 30px;
+      }
+    }
+    img {
+      width: 35vw;
     }
     .contacto__formulario {
       width: 70vw;
